@@ -1,27 +1,58 @@
-# AngularAdminlteTemplate
+# Getting started
+Step 1. Install the required dependencies globally
+```
+npm install -g typescript
+```
+```
+npm install -g @angular/cli
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+Step 2. Go into root directory
+```
+cd <ROOT>
+```
 
-## Development server
+Step 3. Create a new project
+```
+ng new angular-adminlte-template
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Step 4. Go into the project directory
+```
+cd angular-adminlte-template
+```
 
-## Code scaffolding
+Step 5. Run the application
+```
+ng serve
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Step 6. Open the browser and go to `http://localhost:4200/` 
 
-## Build
+# Install Admin-LTE
+```
+npm install admin-lte --save
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Open the `angular.json` and replace `"styles":[]` and `"scripts":[]` sections with this:
+```javascript
+"styles": [
+    "node_modules/bootstrap/dist/css/bootstrap.css",
+    "node_modules/font-awesome/css/font-awesome.css",
+    "node_modules/ionicons/dist/css/ionicons.css",
+    "src/_variables.less",
+    "src/styles.css"
+],
+"scripts": [
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/admin-lte/plugins/jQueryUI/jquery-ui.js",
+    "node_modules/bootstrap/dist/js/bootstrap.js",
+    "node_modules/admin-lte/dist/js/adminlte.js",
+    "src/assets/js/adminLTEOptions.js",
+    "src/assets/js/scripts.js"
+]
+```
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Read more...
+https://adminlte.io/themes/AdminLTE/documentation/index.html
+https://programmer.help/blogs/5c49843d32437.html
